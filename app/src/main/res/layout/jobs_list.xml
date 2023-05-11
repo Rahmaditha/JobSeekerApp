@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="10dp"
+    android:elevation="5dp"
+    android:id="@+id/cl_genre"
+    android:foreground="?selectableItemBackground"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/picture_jobs"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent=".7"
+        app:layout_constraintWidth_percent=".3"
+        android:layout_marginVertical="10dp"
+        android:layout_marginLeft="8dp"
+        android:background="@drawable/man"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_title_job"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:text="Data Engineer"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/picture_jobs"
+        app:layout_constraintTop_toTopOf="@+id/picture_jobs" />
+
+    <TextView
+        android:id="@+id/tv_company_job"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_title_job"
+        app:layout_constraintStart_toEndOf="@id/picture_jobs"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:text="Data Engineer"
+        android:ellipsize="end"
+        android:textStyle="bold"
+        android:maxLines="3"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/tv_location_job"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_company_job"
+        app:layout_constraintStart_toEndOf="@id/picture_jobs"
+        app:layout_constraintBottom_toTopOf="@id/tv_type_job"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:text="Data Engineer"
+        android:ellipsize="end"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/tv_type_job"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:text="Data Engineer"
+        android:textSize="16sp"
+        android:textAlignment="textEnd"
+        android:layout_marginBottom="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/picture_jobs" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
